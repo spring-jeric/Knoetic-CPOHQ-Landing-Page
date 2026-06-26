@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPOHQ — The room of the world's top CPOs</title>
+  <meta name="description" content="The most trusted room in people leadership: 3,600 vetted CPOs, now with an AI Chief of Staff that runs your people function on your own data." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=10" />
+</head>
+<body>
+
+  <!-- grain + atmosphere -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="atmos" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+
+  <!-- custom cursor -->
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"></span></div>
+
+  <!-- scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-mark">
+      <span class="pre-word">CPOHQ</span>
+      <span class="pre-sub">the room of the world's top CPOs</span>
+    </div>
+    <div class="pre-bar"><span></span></div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="header">
+    <div class="shell nav">
+      <a href="#" class="logo" data-magnetic>CPOHQ</a>
+      <nav class="nav-links">
+        <a href="#community" data-link>Community</a>
+        <a href="#agents" data-link>Agents</a>
+        <a href="#platform" data-link>Platform</a>
+        <a href="#members" data-link>Members</a>
+        <a href="#security" data-link>Security</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="link-plain" data-link>Sign in</a>
+        <a href="#" class="btn btn-ink" data-magnetic><span>Apply to join</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <canvas class="hero-canvas" id="hero-stage" aria-hidden="true"></canvas>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <span class="hero-kicker" data-fade><span class="kicker-dash"></span>The CPO network</span>
+
+          <h1 class="hero-title reveal-text">Become the most capable people leader in the <em>room.</em></h1>
+
+          <p class="hero-sub" data-fade>The most trusted room in people leadership — 3,600 vetted CPOs defining the AI era, with an AI Chief of Staff that runs your people function on your own data.</p>
+
+          <div class="hero-cta" data-fade>
+            <a href="#" class="btn btn-ink" data-magnetic><span>Apply to join</span></a>
+            <a href="#agents" class="btn btn-text" data-magnetic><span>See the agents →</span></a>
+          </div>
+
+          <div class="hero-meta" data-fade>
+            <div class="hstat"><span class="hstat-num" data-counter="3600">0</span><span class="hstat-label">vetted CPOs</span></div>
+            <div class="hstat"><span class="hstat-num" data-counter="6">0</span><span class="hstat-label">sources · one record</span></div>
+            <div class="hstat"><span class="hstat-num" data-counter="3">0</span><span class="hstat-label">always-on agents</span></div>
+          </div>
+
+          <div class="hero-backed" data-fade><span class="ey-dot"></span>Backed by Trinity · Menlo · EQT Ventures</div>
+        </div>
+
+        <div class="hero-globe">
+          <div class="hero-switch" role="tablist" aria-label="Switch hero visual">
+            <span class="switch-thumb" aria-hidden="true"></span>
+            <button class="switch-opt is-active" data-mode="sphere" role="tab" aria-selected="true">Sphere</button>
+            <button class="switch-opt" data-mode="orbit" role="tab" aria-selected="false">Orbit</button>
+          </div>
+        </div>
+      </div>
+
+      <a href="#community" class="scroll-cue" aria-label="Scroll down"><span class="sc-line"></span>scroll</a>
+    </section>
+
+    <!-- ===================== TRUST MARQUEE ===================== -->
+    <section class="marquee-wrap" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Brex</span><i>✦</i><span>NerdWallet</span><i>✦</i><span>Ramp</span><i>✦</i><span>Vercel</span><i>✦</i><span>Notion</span><i>✦</i><span>Figma</span><i>✦</i><span>Stripe</span><i>✦</i><span>Rippling</span><i>✦</i><span>Gusto</span><i>✦</i><span>Linear</span><i>✦</i>
+          <span>Brex</span><i>✦</i><span>NerdWallet</span><i>✦</i><span>Ramp</span><i>✦</i><span>Vercel</span><i>✦</i><span>Notion</span><i>✦</i><span>Figma</span><i>✦</i><span>Stripe</span><i>✦</i><span>Rippling</span><i>✦</i><span>Gusto</span><i>✦</i><span>Linear</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MANIFESTO ===================== -->
+    <section class="manifesto theme-dark bg-dark">
+      <div class="shell">
+        <span class="eyebrow center" data-reveal><span class="ey-dot"></span>The truth no one says out loud</span>
+        <p class="manifesto-text" id="manifesto">You own people for the whole company — and there's no peer inside it to think with. The hardest decisions can't be Googled, and can't be worked through with your own team. CPOHQ is the one room where they can.</p>
+      </div>
+    </section>
+
+    <!-- ===================== COMMUNITY ===================== -->
+    <section class="section bg-white" id="community">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal><span class="ey-dot"></span>CPOHQ · the community</span>
+          <h2 class="h2" data-reveal>Not a contact list. <em>A working room</em> of peers.</h2>
+          <p class="lead" data-reveal>Vetted and apply-only. Benchmark against real peers, get answers in days instead of a Gartner cycle, and learn to lead in the AI era from the CPOs already doing it.</p>
+        </div>
+
+        <div class="feature-cards">
+          <article class="feature-card" data-reveal data-tilt>
+            <div class="fc-visual fc-blue">
+              <div class="mini-card">
+                <span class="mini-label">Peer benchmark · live</span>
+                <div class="bench"><span class="bench-name">Top 10%</span><span class="bar"><span data-bar="86"></span></span></div>
+                <div class="bench"><span class="bench-name">You</span><span class="bar"><span data-bar="64"></span></span></div>
+                <div class="bench"><span class="bench-name">Average</span><span class="bar"><span data-bar="41"></span></span></div>
+              </div>
+            </div>
+            <div class="fc-body">
+              <h3 class="h3">Benchmark against real peers</h3>
+              <p>Ask "what percent of your eng org actually uses AI tools?" and see exactly where you land. Hundreds of peer benchmarks, answered by CPOs who actually know.</p>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal data-tilt>
+            <div class="fc-visual fc-mint fc-bottom">
+              <div class="mini-card">
+                <div class="qa-row"><span>Layoff comms playbook</span><span class="chip chip-green">Answered</span></div>
+                <div class="qa-row"><span>Equity refresh bands</span><span class="chip chip-green">Answered</span></div>
+                <div class="qa-row"><span>RTO without attrition</span><span class="chip chip-green">Answered</span></div>
+              </div>
+            </div>
+            <div class="fc-body">
+              <h3 class="h3">Answers in days, not cycles</h3>
+              <p>Post the question you can't take to your team. Get candid, off-the-record guidance from people who have already faced it.</p>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal data-tilt>
+            <div class="fc-visual fc-violet fc-bottom">
+              <div class="mini-card">
+                <div class="member-row"><span class="avatar sm grad-1">EL</span><span>ELEVATE · in person</span></div>
+                <div class="member-row"><span class="avatar sm grad-2">BD</span><span>Curated peer dinners</span></div>
+                <div class="member-row"><span class="avatar sm grad-3">BO</span><span>Your personal board of CPOs</span></div>
+              </div>
+            </div>
+            <div class="fc-body">
+              <h3 class="h3">Your personal board of CPOs</h3>
+              <p>3,600 vetted Chief People Officers, plus ELEVATE in person. The exclusivity is the point, and it shows in every answer.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AGENTS ===================== -->
+    <section class="section bg-soft" id="agents">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal><span class="ey-dot"></span>Talent intelligence</span>
+          <h2 class="h2" data-reveal>The room helps you decide. <em>Your agents</em> do the work.</h2>
+          <p class="lead" data-reveal>Three agents, always on, each reading the same governed view of your data. The two leads spawn the analysts and HRBPs you never had the headcount for.</p>
+        </div>
+
+        <div class="agents-layout">
+          <div class="agents-list" data-reveal>
+            <span class="agents-hint"><span class="hint-dot"></span>Select an agent</span>
+            <button class="agent-btn is-active" data-agent="cos">
+              <span class="agent-num">01</span>
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+              </span>
+              <span class="agent-meta"><span class="agent-title">AI Chief of Staff</span><span class="agent-sub">Ask anything about your people</span></span>
+              <span class="agent-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+            </button>
+            <button class="agent-btn" data-agent="talent">
+              <span class="agent-num">02</span>
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 11-2 2-2-2"/></svg>
+              </span>
+              <span class="agent-meta"><span class="agent-title">Head of Talent Management</span><span class="agent-sub">spawns HRBP sub-agents</span></span>
+              <span class="agent-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+            </button>
+            <button class="agent-btn" data-agent="analytics">
+              <span class="agent-num">03</span>
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-5"/></svg>
+              </span>
+              <span class="agent-meta"><span class="agent-title">Head of People Analytics</span><span class="agent-sub">spawns analyst sub-agents</span></span>
+              <span class="agent-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span>
+            </button>
+          </div>
+
+          <div class="agent-chat" data-reveal>
+            <div class="chat-head">
+              <div><div class="chat-q" id="chat-q">What changed in the org this week?</div><div class="chat-author" id="chat-author">AI Chief of Staff</div></div>
+              <span class="live-pill"><i></i>Live</span>
+            </div>
+            <div class="chat-answer" id="chat-answer">Marketing has 2× the manager changes of any team this quarter. One top performer has had no comp change in 14 months.</div>
+            <div class="chat-stats" id="chat-stats">
+              <div class="chat-stat"><span class="stat-label">Manager changes</span><span class="stat-value" data-counter="7">0</span><span class="stat-sub danger">Marketing leads</span></div>
+              <div class="chat-stat"><span class="stat-label">Flagged comp gaps</span><span class="stat-value" data-counter="3">0</span><span class="stat-sub muted">across teams</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PLATFORM ===================== -->
+    <section class="section bg-white" id="platform">
+      <div class="shell platform-layout">
+        <div class="platform-copy">
+          <span class="eyebrow" data-reveal><span class="ey-dot"></span>The platform</span>
+          <h2 class="h2 left" data-reveal>One <em>context graph</em> for all your people data.</h2>
+          <p class="lead left" data-reveal>All data is people data. CPOHQ reconciles Workday, Slack, Greenhouse, Lattice, calendars and CSVs into one governed record per employee — the unforgiving data layer every agent stands on.</p>
+          <ul class="platform-points">
+            <li data-reveal><strong>Field & population level access</strong> — insight reaches VPs and HRBPs, not one chief of staff</li>
+            <li data-reveal><strong>Full transparency</strong> — every number clicks through to its source</li>
+            <li data-reveal><strong>Nightly syncs</strong> plus on-demand pushes — live data you can trust</li>
+          </ul>
+        </div>
+
+        <div class="record-card" data-reveal>
+          <div class="record-head">
+            <span class="avatar lg grad-1">RW</span>
+            <div><div class="record-title">Unified employee record</div><div class="record-sub">Reconciled from 6 sources · updated nightly</div></div>
+          </div>
+          <ul class="source-list">
+            <li data-source><span class="src-badge">WD</span><span class="src-name">Workday</span><span class="src-note">comp, level, tenure</span><span class="src-status"><i></i>Synced</span></li>
+            <li data-source><span class="src-badge">SL</span><span class="src-name">Slack</span><span class="src-note">collaboration signals</span><span class="src-status"><i></i>Synced</span></li>
+            <li data-source><span class="src-badge">GH</span><span class="src-name">Greenhouse</span><span class="src-note">hiring history</span><span class="src-status"><i></i>Synced</span></li>
+            <li data-source><span class="src-badge">LA</span><span class="src-name">Lattice</span><span class="src-note">reviews, goals</span><span class="src-status"><i></i>Synced</span></li>
+            <li data-source><span class="src-badge">AD</span><span class="src-name">ADP · CSVs</span><span class="src-note">payroll, legacy</span><span class="src-status"><i></i>Synced</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MEMBERS (horizontal pinned) ===================== -->
+    <section class="members theme-dark bg-dark" id="members">
+      <div class="members-head shell">
+        <span class="eyebrow" data-reveal><span class="ey-dot"></span>Member quality is the proof</span>
+        <h2 class="h2" data-reveal>The room you've <em>never had.</em></h2>
+        <p class="micro" data-reveal>A few of the people leaders from past CPOHQ ELEVATE gatherings. Drag or scroll →</p>
+      </div>
+      <div class="members-viewport" id="members-viewport">
+        <div class="members-track" id="members-track"><!-- portraits injected by JS --></div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPARISON ===================== -->
+    <section class="section bg-soft">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal><span class="ey-dot"></span>Why CPOHQ</span>
+          <h2 class="h2" data-reveal>Everyone else gives you half. <em>CPOHQ has both.</em></h2>
+        </div>
+        <div class="compare">
+          <div class="compare-card compare-them" data-reveal>
+            <h4 class="compare-title">Everything else</h4>
+            <ul class="compare-list compare-no">
+              <li>AI tools with a strong product but no community or prestige</li>
+              <li>Executive networks with prestige but no real product</li>
+              <li>Benchmarks that arrive a quarter too late</li>
+              <li>Generic models that can't see your people data</li>
+            </ul>
+          </div>
+          <div class="compare-card compare-us" data-reveal>
+            <h4 class="compare-title accent">CPOHQ</h4>
+            <ul class="compare-list compare-yes">
+              <li>3,600 vetted CPOs and a product that does the work</li>
+              <li>Prestige and member quality you can verify</li>
+              <li>Peer benchmarks answered in days</li>
+              <li>Agents grounded in your governed context graph</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section theme-dark bg-dark">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal><span class="ey-dot"></span>Loved by the best people leaders</span>
+          <h2 class="h2" data-reveal>The proof is <em>the room.</em></h2>
+        </div>
+        <div class="testimonials">
+          <figure class="t-card" data-reveal>
+            <div class="stars">★★★★★</div>
+            <blockquote>"I've been to a lot of conferences over the years, and I must say, this was the best one yet."</blockquote>
+            <figcaption><img class="t-avatar" alt="" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&h=120&fit=crop&crop=faces&q=80" loading="lazy"/><span><span class="t-name">Heather Dunn</span><span class="t-role">CPO @ Brex</span></span></figcaption>
+          </figure>
+          <figure class="t-card" data-reveal>
+            <div class="stars">★★★★★</div>
+            <blockquote>"After two decades building people functions, I thought I knew what a room of great leaders looked like. This redefined it."</blockquote>
+            <figcaption><img class="t-avatar" alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&crop=faces&q=80" loading="lazy"/><span><span class="t-name">Lynee Luque</span><span class="t-role">CPO @ NerdWallet</span></span></figcaption>
+          </figure>
+          <figure class="t-card" data-reveal>
+            <div class="stars">★★★★★</div>
+            <blockquote>"About 130 Chief People Officers, and without question, the best conference I've ever attended. Real conversations, no posturing."</blockquote>
+            <figcaption><img class="t-avatar" alt="" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=120&h=120&fit=crop&crop=faces&q=80" loading="lazy"/><span><span class="t-name">Carla Diaz</span><span class="t-role">CPO @ Mercury</span></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECURITY ===================== -->
+    <section class="section bg-white" id="security">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal><span class="ey-dot"></span>Built for HR data</span>
+          <h2 class="h2" data-reveal>The most sensitive data you hold. <em>Treated like it.</em></h2>
+        </div>
+        <div class="security-grid">
+          <article class="sec-card" data-reveal><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span><h4>You own your data</h4><p>Never used to train models, never shared with third parties. It is yours, always.</p></article>
+          <article class="sec-card" data-reveal><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h4>Fine-grained access</h4><p>Field and population level role-based access, so the right insight reaches the right leader.</p></article>
+          <article class="sec-card" data-reveal><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg></span><h4>SOC 2 &amp; GDPR</h4><p>SOC 2 Type 2 and EU GDPR compliant, encrypted in transit and at rest.</p></article>
+          <article class="sec-card" data-reveal><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 9 13 14l-3-3-4 4"/></svg></span><h4>Full audit trail</h4><p>Every query, access and change is logged and reviewable. Nothing happens in the dark.</p></article>
+          <article class="sec-card" data-reveal><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></span><h4>Transparent by default</h4><p>Every number clicks through to its source, numerator and denominator.</p></article>
+          <article class="sec-card" data-reveal><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><h4>Enterprise controls</h4><p>SSO, granular permissions and admin governance built for security-serious companies.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INVESTORS ===================== -->
+    <section class="section investors bg-soft">
+      <div class="shell">
+        <span class="eyebrow center" data-reveal><span class="ey-dot"></span>Backed by the best</span>
+        <div class="investor-row">
+          <div class="investor" data-reveal><span class="inv-dot" style="background:#5B8DEF"></span>Trinity Ventures</div>
+          <div class="investor" data-reveal><span class="inv-dot" style="background:#FF9100"></span>Menlo Ventures</div>
+          <div class="investor" data-reveal><span class="inv-dot" style="background:#21C1D6"></span>EQT Ventures</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TWO WAYS IN ===================== -->
+    <section class="section bg-white">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal><span class="ey-dot"></span>Two ways in</span>
+          <h2 class="h2" data-reveal>Build your <em>AI-native</em> people function.</h2>
+          <p class="lead" data-reveal>Join the community, or put the agents to work on your own data. Most leaders do both.</p>
+        </div>
+        <div class="ways">
+          <article class="way-card" data-reveal data-tilt>
+            <span class="chip chip-blue">CPOHQ community</span>
+            <h3 class="h3 big">Join the community</h3>
+            <p>For people leaders who want to keep up with what's actually working. 3,600 peers, live benchmarks, ELEVATE.</p>
+            <a href="#" class="btn btn-ink" data-magnetic><span>Apply to join →</span></a>
+          </article>
+          <article class="way-card way-feature" data-reveal data-tilt>
+            <span class="chip chip-glass">The agents</span>
+            <h3 class="h3 big">Deploy the agents</h3>
+            <p>For teams ready to turn people data into decisions. Live in about a month, around two hours of your HRIS owner's time.</p>
+            <a href="#" class="btn btn-light" data-magnetic><span>Get a demo →</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section bg-soft">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal><span class="ey-dot"></span>You have questions</span>
+          <h2 class="h2" data-reveal>We have <em>answers.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq" data-reveal><summary>Who gets into CPOHQ?<span class="faq-plus"></span></summary><div class="faq-body"><p>CPOHQ is apply-only and vetted. Membership is reserved for sitting Chief People Officers and senior people leaders at companies that meet our bar.</p></div></details>
+          <details class="faq" data-reveal><summary>What is the AI Chief of Staff?<span class="faq-plus"></span></summary><div class="faq-body"><p>An always-on agent that reads your governed people data and answers the questions you'd otherwise wait weeks for — every number traced to its source.</p></div></details>
+          <details class="faq" data-reveal><summary>How long until the agents are live?<span class="faq-plus"></span></summary><div class="faq-body"><p>About a month, and roughly two hours of your HRIS owner's time to connect sources. We handle reconciliation and governance from there.</p></div></details>
+          <details class="faq" data-reveal><summary>Is my people data safe?<span class="faq-plus"></span></summary><div class="faq-body"><p>Yes. It's never used to train models or shared with third parties. SOC 2 Type 2 and GDPR compliant, encrypted in transit and at rest.</p></div></details>
+          <details class="faq" data-reveal><summary>Do I have to use both the community and the agents?<span class="faq-plus"></span></summary><div class="faq-body"><p>No. Join the community, deploy the agents, or do both. Most leaders end up doing both, but you can start with either.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="final-cta theme-dark">
+      <canvas class="cta-canvas" id="cta-constellation" aria-hidden="true"></canvas>
+      <div class="shell final-inner">
+        <span class="eyebrow center" data-reveal><span class="ey-dot"></span>The hardest seat in the company</span>
+        <h2 class="final-title reveal-text">You don't have to sit in it <em>alone.</em></h2>
+        <p class="lead" data-fade>Join the room of the world's top CPOs, and put your AI Chief of Staff to work on your people data.</p>
+        <div class="hero-cta center" data-fade>
+          <a href="#" class="btn btn-ink" data-magnetic><span>Apply to join</span></a>
+          <a href="#agents" class="btn btn-ghost" data-magnetic><span>See the agents →</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer theme-dark">
+    <div class="shell footer-inner">
+      <div class="footer-cols">
+        <div class="footer-brand">
+          <a href="#" class="logo">CPOHQ</a>
+          <p>The community of the world's top CPOs, now building the AI that runs the people function.</p>
+        </div>
+        <div class="footer-col"><h5>Community</h5><a href="#">What members get</a><a href="#">Members</a><a href="#">Apply</a><a href="#">ELEVATE</a></div>
+        <div class="footer-col"><h5>Platform</h5><a href="#">Context graph</a><a href="#">The agents</a><a href="#">Security</a></div>
+        <div class="footer-col"><h5>Company</h5><a href="#">About</a><a href="#">Careers</a><a href="#">Contact</a><a href="#">Privacy</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CPOHQ · Backed by Trinity, Menlo &amp; EQT Ventures</span>
+        <span>The community of the world's top CPOs</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- libs -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.umd.js"></script>
+  <script src="main.js?v=21"></script>
+</body>
+</html>
