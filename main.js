@@ -543,6 +543,7 @@
     rings.forEach((rg, ri) => { for (let k = 0; k < rg.count; k++) ringSlots.push({ rg, ri, k }); });
     const N = 96;                        // dense sphere; only ringSlots.length show in orbit
     const SPHERE_R = 2.85;
+    const SPHERE_CX = -0.7;               // nudge the sphere left (more right-edge margin, still clear of the copy)
     const ORBIT_YS = 1.0;                 // true circular orbits
     const ORBIT_RSCALE = 1.2;             // bigger rings so only part of the orbit is in frame
     const ORBIT_CX = 0.8, ORBIT_CY = -1.1; // relative to the right-shifted visual center (partial orbit)
@@ -701,7 +702,7 @@
         const tl = tiles[i];
         // sphere (rotated around Y)
         const bx = tl.sBase.x * SPHERE_R, by = tl.sBase.y * SPHERE_R, bz = tl.sBase.z * SPHERE_R;
-        const sx = bx * cs + bz * sn, sz = -bx * sn + bz * cs, sy = by;
+        const sx = bx * cs + bz * sn + SPHERE_CX, sz = -bx * sn + bz * cs, sy = by;
         // orbit (circular, per-ring spin) — non-orbit tiles collapse toward center & fade
         let ox, oy, oz;
         if (tl.rg) { const oa = tl.oAngle + tl.rg.dir * t * tl.rg.speed; const R = tl.rg.r * ORBIT_RSCALE; ox = Math.cos(oa) * R + ORBIT_CX; oy = Math.sin(oa) * R * ORBIT_YS + ORBIT_CY; oz = tl.rg.z; }
